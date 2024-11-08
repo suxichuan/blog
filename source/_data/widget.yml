@@ -1,0 +1,7 @@
+#bottom:
+#  - class_name: user-map
+#    id_name: user-map
+#    name: 测试一下
+#    icon: fas fa-heartbeat
+#    order:
+#    html: /custom/widget/test.html

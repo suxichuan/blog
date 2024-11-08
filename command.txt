@@ -1,0 +1,31 @@
+npm install hexo-generator-indexed
+npm install hexo-generator-feed --save
+
+https://npm.elemecdn.com/typed.js/dist/typed.umd.min.js
+http://npm.elemecdn.com/fonts/iconfont.woff
+
+
+https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js
+
+https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css
+
+https://restapi.amap.com/v3/ip?key=37d0d1b0adb57a6c9ff5cd1744ef6023&ip=120.46.193.201
+https://hudi.suxichuan.icu
+"Long Cang", cursive;
+
+
+/etc/letsencrypt/live/www.hudi.space/
+
+
+https://npm.elemecdn.com/artalk/dist/Artalk.min.css
+https://npm.elemecdn.com/artalk/dist/Artalk.min.js
+https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js
+
+
+cp -r /home/git/projects/blog/* /usr/share/nginx/html/
+
+rm -rf /usr/share/nginx/html/*
+
+systemctl restart nginx
+
+
