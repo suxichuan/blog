@@ -25,9 +25,12 @@ menu:
 #  留言 || fas fa-solid fa-clipboard-list:
   链接 || fas fa-link:
     友情链接: /link/ || fas fa-link
-    友情申请: /addlink/ || fas fa-solid fa-at
+    友链申请: /addlink/ || fas fa-solid fa-at
+    朋友圈: /friend/ || iconfont icon-pengyouquan
   我的 || fas fa-solid fa-layer-group:
     电影: /movie/ || fas fa-solid fa-film
+    应用: /applications/ || fas fa-solid fa-industry
+    说说: /memos/ || fas fa-solid fa-comment-dots
   关于 || fas fa-list:
     时间线: /timeline/ || fas fa-solid fa-grip-lines
     留言: /messages/ || fas fa-solid fa-clipboard-list
@@ -172,13 +175,13 @@ subtitle:
     # It will show the source first, then show the content of sub
     # Choose: false/1/2/3
     # false - disable the function
-    #1
     #2: yijuzhan.com
   # 3 - jinrishici.com
     #source: 2
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
     - 每一个人，身上都系着一个世界，由他所见过、爱过的一切所组成的世界。「人类学家，克洛德·列维·斯特劳斯」
+    - 对着星光和海，忘掉一切恨事。我小于一粒微尘，却长于永恒。 「郑愁予」
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -275,6 +278,7 @@ footer:
     since: 2023
   custom_text: 'Hi,朋友别来无恙！'
   custom_icp: 蜀ICP备2024107539号
+  custom_ga: 川公网安备51169602000107号
   # Copyright of theme and framework
   copyright: true
 
@@ -298,7 +302,7 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
 #      icon: fab fa-github
 #      text: Follow Me
       link: https://github.com/suxichuan
@@ -313,7 +317,7 @@ aside:
     sort: date
     sort_order:
   card_newest_comments:
-    enable: false
+    enable: true
     sort_order:
     limit: 6
     # Unit: mins, save data to localStorage
@@ -374,7 +378,7 @@ rightside_bottom:
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: true
+  enable: false
   # The text of a button
   default: 簡
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -410,12 +414,12 @@ rightside_scroll_percent: true
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
 # Don't repeat the same value
 rightside_item_order:
-  enable: false
-  # Default: readmode,translate,darkmode,hideAside
+  enable: true
+   #readmode,random,darkmode,hideAside
   hide:
-  # Default: toc,chat,comment
+     toc,hideAside
   show:
-    readmode,translate,darkmode,hideAside,toc,chat,comment
+    readmode,darkmode,toc,comment,random
 
 # --------------------------------------
 # Global Settings
@@ -449,7 +453,7 @@ wordcount:
 # Busuanzi count for PV / UV in site
 busuanzi:
   site_uv: true
-  site_pv: true
+  site_pv: false
   page_pv: true
 
 # --------------------------------------
@@ -483,7 +487,7 @@ math:
 search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use: local_search
+  use: algolia_search
   placeholder:
 
   # Algolia Search
@@ -504,10 +508,16 @@ search:
   # Docsearch
   # https://docsearch.algolia.com/
   docsearch:
-    appId:
-    apiKey:
-    indexName:
+    appId: "IL8M13XBKP"
+    apiKey: "f44d23da6abad913d44b25c0695f152d"
+    indexName: "hexo"
     option:
+      hits:
+        per_page: 10
+        labels:
+          input_placeholder: Search for Posts
+          hits_empty: "我们没有找到任何搜索结果: ${query}"
+          hits_stats: "找到${hits}条结果（用时${time} ms）"
 
 # --------------------------------------
 # Share System
@@ -537,7 +547,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use: Waline,Twikoo
+  use: Twikoo,Waline
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -794,9 +804,9 @@ preloader:
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 3
+  source: 1
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: /css/barber-shop.css
+  pace_css_url:
 
 # Page Transition
 enter_transitions: true
@@ -837,7 +847,7 @@ hr_icon:
 # Typewriter Effect
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: true
+  enable: false
   colorful: true
   shake: true
   mobile: true
@@ -855,12 +865,12 @@ canvas_ribbon:
   alpha: 0.6
   zIndex: -1
   click_to_change: false
-  mobile: false
+  mobile: true
 
 # Fluttering Ribbon
 canvas_fluttering_ribbon:
   enable: true
-  mobile: false
+  mobile: true
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
@@ -878,7 +888,7 @@ canvas_nest:
 
 # Mouse click effects: fireworks
 fireworks:
-  enable: true
+  enable: false
   zIndex: 9999
   mobile: false
 
@@ -1067,16 +1077,19 @@ css_prefix: true
 #  # - <script src="xxxx"></script>
 inject:
   head:
-    - <link rel="stylesheet" href="https://ai.tianli0.top/static/public/tianli_gpt.min.css">
+#    - <link rel="stylesheet" href="https://ai.tianli0.top/static/public/tianli_gpt.min.css">
 #    - <link rel="stylesheet" type="text/css" href="/custom/css/heoMainColor.css">
     - <link rel="stylesheet" type="text/css" href="/custom/css/poem.css">
+    - <link rel="stylesheet" type="text/css" href="/custom/fonts/fonts.css">
+#    - <link rel="stylesheet" type="text/css" href="/css/loading-stroke-feather.css">
 #    - <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Italic/result.css' />
 #    - <link rel="preconnect" href="https://fonts.googleapis.com">
 #    - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 #    - <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
   bottom:
-    - <script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = '5Q5mpqRK5DkwT1X9Gi5e';</script>
-    - <script src="https://ai.tianli0.top/static/public/tianli_gpt.min.js"></script>
+#    - <script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = '5Q5mpqRK5DkwT1X9Gi5e';</script>
+#    - <script src="https://ai.tianli0.top/static/public/tianli_gpt.min.js"></script>
+    - <script src="https://cdn.hudi.space/js/snow.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
@@ -1117,13 +1130,11 @@ CDN:
 #    pace_js: /custom/js/pace.min.js
 
     fireworks: https://cdn.hudi.space/js/fireworks.min.js
-#    medium_zoom: https://cdn.hudi.space/js/medium-zoom.min.js
     busuanzi: https://cdn.hudi.space/js/busuanzi.pure.mini.js
     fontawesome: https://cdn.hudi.space/css/all.min.css
     lazyload: https://cdn.hudi.space/js/lazyload.iife.min.js
     canvas_ribbon: https://cdn.hudi.space/js/canvas-ribbon.min.js
     canvas_fluttering_ribbon: https://cdn.hudi.space/js/canvas-fluttering-ribbon.min.js
-    activate_power_mode: https://cdn.hudi.space/js/activate-power-mode.min.js
     sharejs: https://cdn.hudi.space/js/social-share.min.js
     sharejs_css: https://cdn.hudi.space/css/share.min.css
     fancybox: https://cdn.hudi.space/js/fancybox.umd.min.js
@@ -1133,4 +1144,7 @@ CDN:
     waline_js: https://cdn.hudi.space/js/waline.min.js
     twikoo_js: https://cdn.hudi.space/js/twikoo.all.min.js
     pace_js: https://cdn.hudi.space/js/pace.min.js
+    algolia_search: https://cdn.hudi.space/js/algoliasearch-lite.umd.min.js
 #    clickShowText: https://cdn.hudi.space/js/click-show-text.min.js
+#    medium_zoom: https://cdn.hudi.space/js/medium-zoom.min.js
+#    activate_power_mode: https://cdn.hudi.space/js/activate-power-mode.min.js

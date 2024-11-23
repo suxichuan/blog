@@ -5,7 +5,7 @@ type: "movie"
 comments: false
 #top_img: 'linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)'
 top_img: false
-aside: false
+aside: true
 ---
 
 {% note simple %}
@@ -17,7 +17,7 @@ aside: false
 <!-- tab 已看-->
 
 <div class="movie_item">
-     {% inlineImg https://s2.loli.net/2024/11/07/Fwn1xqYt7oki6jL.webp 150px %} 
+     {% inlineImg https://bitiful.hudi.space/movie/p2913215934.jpeg 150px %} 
     <p class="info">
        <span>危机航线 (2024)</span>
        <span>主演: 刘德华 / 张子枫 / 屈楚萧 / 刘涛 / 郭晓东 </span>
@@ -27,7 +27,7 @@ aside: false
     </p>
 </div>  
 <div class="movie_item">
-     {% inlineImg https://s2.loli.net/2024/11/07/xvVNMRXjZBcuDnT.webp 150px %} 
+     {% inlineImg https://bitiful.hudi.space/movie/p2913374899.jpeg 150px %} 
     <p class="info">
        <span>志愿军：存亡之战 (2024)</span>
        <span>主演: 朱一龙 / 辛柏青 / 张子枫 / 朱亚文 / 陈飞宇 </span>
@@ -38,7 +38,7 @@ aside: false
 </div>  
 
 <div class="movie_item">
-     {% inlineImg https://s2.loli.net/2024/11/07/4CZtMeHvaRO8cpr.webp 150px %} 
+     {% inlineImg https://bitiful.hudi.space/movie/p2904477111.jpeg 150px %} 
     <p class="info">
        <span>哥斯拉大战金刚2:帝国崛起(2024)</span>
        <span>主演: 丽贝卡·豪尔 /布莱恩·泰里·亨利 /丹·史蒂文斯 /凯莉·霍特尔</span>
@@ -49,8 +49,9 @@ aside: false
 </div>  
 
 
+
   <div class="movie_item">
-     {% inlineImg https://s2.loli.net/2024/11/07/JSB6wvMcspETnRW.webp 150px %} 
+     {% inlineImg https://bitiful.hudi.space/movie/p2902227445.webp 150px %} 
     <p class="info">
        <span>沙丘2 Dune(2024)</span>
        <span>主演: 提莫西·查拉梅/赞达亚/丽贝卡·弗格森/</span>
@@ -61,7 +62,7 @@ aside: false
 </div>  
 
 <div class="movie_item">
-     {% inlineImg https://s2.loli.net/2024/11/07/i2utASXkU9rC1HN.webp 150px %} 
+     {% inlineImg https://bitiful.hudi.space/movie/p2903145026.jpeg 150px %} 
     <p class="info">
        <span>第二十条 (2024)</span>
        <span>主演: 雷佳音 / 马丽 / 赵丽颖 / 高叶 / 刘耀文</span>
@@ -71,12 +72,13 @@ aside: false
     </p>
 </div>  
 
+
 <!-- endtab -->
 
 <!-- tab 想看-->
 
 <div class="movie_item">
-     {% inlineImg https://s2.loli.net/2024/11/07/78sYneaw36ql4kf.webp 150px %} 
+     {% inlineImg https://bitiful.hudi.space/movie/p2914777370.jpeg 150px %} 
     <p class="info">
        <span>焚城 (2024)</span>
        <span>主演: 刘德华 / 白宇 / 莫文蔚 / 谢君豪 / 王菀之 </span>
@@ -85,6 +87,7 @@ aside: false
        <span>片长: 136分钟</span>
     </p>
 </div>  
+
 
 <!-- endtab -->
 

@@ -1,15 +1,43 @@
 - class_name: 友情链接
   class_desc: 那些人，那些事
   link_list:
-    - name: Hexo
-      link: https://hexo.io/zh-tw/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、简单且强大的网志框架
+    - name: 清羽飞扬
+      link: https://blog.liushen.fun/
+      avatar: https://blog.liushen.fun/info/avatar.ico
+      descr: 柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜
+
+    - name: 雾林博客
+      link: https://www.baiwulin.com
+      avatar: https://cravatar.cn/avatar/6069656389d12d0741da383e40f82e8f?s=400
+      descr: 不敢奢求活在梦中，但依然向往梦中世界
+
+    - name: 一四三随笔
+      link: https://www.young143.top/
+      avatar: http://www.young143.top/a.jpg
+      descr: 如果我死在追逐自由的路上,那便是我的终点.
+
+    - name: 刘郎阁
+      link: https://vjo.cc/
+      avatar: https://vjo.cc/usr/uploads/logo.jpeg
+      descr: 一个积极向上的生活探索者！
+
+    - name: 随风落叶
+      link: https://www.7zsk.cn
+      avatar: https://www.7zsk.cn/photo/ico.png
+      descr: 秋风生渭水，落叶满长安。
+
+    - name: XINGYE's Blog
+      link: https://blog.xing-ye.top/
+      avatar: https://blog.xing-ye.top/avatar.webp
+      descr: 不要放弃，坚持学习，坚守理想，等待时机！
+
+
+
 
 - class_name: 网站
   class_desc: 值得推荐的网站
   link_list:
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中国最大社交分享平台
+    - name: Webgradients
+      link: https://webgradients.com/
+      avatar: https://files.codelife.cc/icons/webgradients.svg
+      descr: 颜色渐变

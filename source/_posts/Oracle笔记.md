@@ -1,7 +1,7 @@
 ---
-title: Oracle学习基础笔记(一)
-thumbnail: 'https://s2.loli.net/2024/10/20/QGgJ5LwcjVuiI2X.jpg'
-cover: 'https://s2.loli.net/2024/10/20/QGgJ5LwcjVuiI2X.jpg'
+title: Oracle学习基础笔记
+thumbnail: 'https://bitiful.hudi.space/posts/oraclebase/Oracle_banner.jpeg'
+cover: 'https://bitiful.hudi.space/posts/oraclebase/Oracle_banner.jpeg'
 description: 关系型数据库学习，其中包括数据库查询语言，控制语言，操作语言等，对表空间的理解，索引，视图等操作，有存储函数，存储过程
 categories:
   - 数据库
@@ -33,11 +33,11 @@ expires: 2023-08-31 23:59:59
 
 指定OCI library路径：D:\BaiduNetdiskDownload\client\instantclient_12_1\oci.dll
 
-![image-20230714112548602](https://s2.loli.net/2024/10/19/cpLkrysu8OPBWn3.png)
+![image-20230714112548602](https://bitiful.hudi.space/posts/oraclebase/plsql_develop_1.png)
 
 3、在 ORACLE 的以下安装目录中找到 tnsnames.ora 文件，拷贝到本地电脑的 D盘根目录。打开 tnsnames.ora 文件编辑配置oracle所在的服务器IP地址，设置环境变量 TNS_ADMIN 为 D 盘根目录( tnsnames.ora 所在目录 )
 
-![image-20230714113841909](https://s2.loli.net/2024/10/19/3moA91eZRBKpDIG.png)
+![image-20230714113841909](https://bitiful.hudi.space/posts/oraclebase/plsql_develop_2.png)
 
 4、中文编码设置查看服务器端编码 
 

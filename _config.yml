@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://www.hudi.space
+url: https://www.hudi.space
 permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
@@ -159,6 +159,37 @@ electric_clock:
   gaud_map_key: 37d0d1b0adb57a6c9ff5cd1744ef6023 # 高得地图web服务key
   default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
   rectangle: 91.171951,29.653456 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
+
+
+hexo_external_link:
+  enable: true
+  enable_base64_encode: true
+  url_param_name: 'u'
+  html_file_name: 'go.html'
+  target_blank: true
+  link_rel: 'external nofollow noopener noreferrer'
+  domain: 'www.hudi.space' # 如果开启了防盗链
+  safety_chain: true
+  ignore_attrs:
+    - 'data-fancybox'
+    - 'ignore-external-link'
+
+algolia:
+  appId: "IL8M13XBKP"
+  apiKey: "f44d23da6abad913d44b25c0695f152d"
+  adminApiKey: "9232b4ce7bd3908973b400a49cadff7c"
+  chunkSize: 5000
+  indexName: "hexo"
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

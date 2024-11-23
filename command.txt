@@ -8,24 +8,54 @@ http://npm.elemecdn.com/fonts/iconfont.woff
 https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js
 
 https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css
+https://cdn.jsdelivr.net/gh/imaegoo/emotion/owo.json
+
+git remote set-url origin git@github.com:suxichuan/blog.git
 
 https://restapi.amap.com/v3/ip?key=37d0d1b0adb57a6c9ff5cd1744ef6023&ip=120.46.193.201
 https://hudi.suxichuan.icu
 "Long Cang", cursive;
 
-
+https://s0.wp.com/mshots/v1/https://memos.hudi.space/auth/?w=400&h=300
 /etc/letsencrypt/live/www.hudi.space/
-
-
+https://cdn.jsdelivr.net/algoliasearch/dist/lite/builds/browser.umd.min.js
+https://cdn.aimiliy.top/npm/js/algoliasearch-lite.umd.min.js
 https://npm.elemecdn.com/artalk/dist/Artalk.min.css
 https://npm.elemecdn.com/artalk/dist/Artalk.min.js
 https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js
+https://cdn.jsdelivr.net/webfonts/fa-regular-400.woff
 
 
 cp -r /home/git/projects/blog/* /usr/share/nginx/html/
-
 rm -rf /usr/share/nginx/html/*
-
 systemctl restart nginx
 
+docker run -d -p 5630:5630 --name wiki --restart unless-stopped -e "DB_TYPE=mysql" -e "DB_HOST=192.168.23.1" -e "DB_PORT=3306" -e "DB_USER=root" -e "DB_PASS=root" -e "DB_NAME=wiki" ghcr.io/requarks/wiki:2
+https://npm.elemecdn.com
 
+eyJhbGciOiJIUzI1NiIsImtpZCI6InYxIiwidHlwIjoiSldUIn0.eyJuYW1lIjoiaHVkaSIsImlzcyI6Im1lbW9zIiwic3ViIjoiMSIsImF1ZCI6WyJ1c2VyLmFjY2Vzcy10b2tlbiJdLCJpYXQiOjE3MzEyOTgxNjd9.7c4rIdR1QRiDvN-1f0kLHHlSsRTe3Vom-cN2PPco06Y
+http://memos.hudi.space
+
+docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:0.20.0
+http://1.94.247.6:5230/memos.api.v1.MemoService/ListMemos
+https://memos.hudi.space/api/v1/memo?creatorUsername=hudi&rowStatus=NORMAL&limit=20
+-webkit-clip-path: polygon(50% 0%, 96% 25%, 96% 75%, 50% 100%, 4% 75%, 4% 25%);
+clip-path: polygon(50% 0%, 96% 25%, 96% 75%, 50% 100%, 4% 75%, 4% 25%);
+
+
+docker run -d -p 5600:5600 shuiche/mind-map:latest
+
+
+ 网易邮箱 EYNsGxnbSEyeE429
+ qq邮箱 yomnqnzomwxobhib
+
+
+
+这个twikoo的邮件提醒终于设置好了。结果是vercel的vercel authentication的问题。我以为是我配置的问题。fontawesome文件跨域那个我在那个配置了一下。应该没问题了😂。真的是太菜了
+
+
+756262817
+
+
+路过图床( https://imgtu.com/ )【我常用】
+遇见图床( https://www.hualigs.cn/ )

@@ -1,0 +1,6 @@
+- class_name: 我的应用
+  link_list:
+    - name: Memos
+      link: https://memos.hudi.space/auth
+      mshot: https://s0.wp.com/mshots/v1/https://memos.hudi.space/auth/?w=400&h=300
+      descr: 这就是一个类似备忘录的小软件，记录一些小想法。感觉有哲理的小句子。

@@ -1,7 +1,7 @@
 ---
 title: Picgo+Typora+SMMS图床配置
-thumbnail: 'https://s2.loli.net/2024/10/20/6NEptbIQKHLAfXx.jpg'
-cover: 'https://s2.loli.net/2024/10/20/6NEptbIQKHLAfXx.jpg'
+thumbnail: 'https://bitiful.hudi.space/posts/picgo_typora_cover_post.jpeg'
+cover: 'https://bitiful.hudi.space/posts/picgo_typora_cover_post.jpeg'
 description: '本文介绍了使用免费图床 sm.ms 以及扩展到又拍云的配置方法。首先说明了选择 sm.ms 图床的原因，并详细介绍了 Picgo 安装配置及与 sm.ms
   图床的连接步骤，使用插件方式。接着介绍了 Typora 的配置，使其能利用 Picgo 工具将图片自动上传到 sm.ms
   图床。最后以又拍云为例进行扩展，包括注册账号、创建服务、绑定域名、操作员授权等步骤，以及在 Picgo 中的配置方法。'
@@ -18,9 +18,7 @@ abbrlink: 532806c
 
 # Picgo+Typora+SMMS图床配置
 
-# 🔔碎碎念：
-
-​		由于每次写学习笔记都会有相应的图片。之前有使用过***阿里云的OSS***。使用起来也是相当不错的，但是OSS是收费的。其***付费模式***可以包月，也可以按访问流量来付费，虽然便宜，但是对于还在学习的小伙伴来说也是没必要的。使用***免费的图床***也可以实现相同的功能。比如sm.ms图床，有免费版本和付费版本，免费容量是50G。访问速度来说也还算是OK。所以本次配置的图床选择sm.ms。
+​		由于每次写学习笔记都会有相应的图片。之前有使用过***阿里云的OSS***。使用起来也是相当不错的，但是OSS是收费的。其***付费模式***可以包月，也可以按访问流量来付费，虽然便宜，但是对于还在学习的小伙伴来说也是没必要的。使用***免费的图床***也可以实现相同的功能。比如sm.ms图床，有免费版本和付费版本，免费容量是5G。访问速度来说也还算是OK。所以本次配置的图床选择sm.ms。
 
 ​		写这篇配置教程的***目的***是，将自己以前的学习做一个***记录***，就是想帮助一下***更多的***，想要实现相同功能的朋友。其次也是帮助一下特别好的朋友配置图床。
 
@@ -34,15 +32,15 @@ abbrlink: 532806c
 
 3. 应用界面：
 
-   ![image-20241020140658220](https://s2.loli.net/2024/10/20/RAOhWi32Gw496os.png)
+   ![image-20241020140658220](https://bitiful.hudi.space/posts/image-20241020140658220.png)
 
 ### Picgo安装配置：
 
-1. 下载地址：https://github.com/Molunerfinn/PicGo，或者选择其他镜像源下载也可。下载已经打包好的exe程序，安装直接点击exe可执行程序，点击下一步即可。
+1. 下载地址： https://github.com/Molunerfinn/PicGo ，或者选择其他镜像源下载也可。下载已经打包好的exe程序，安装直接点击exe可执行程序，点击下一步即可。
 
-2. 下载完成后。配置sm.ms图床。配置sm.ms图床前需要注册图床的账户。[图床地址](https://smms.app/)https://smms.app/。
+2. 下载完成后。配置sm.ms图床。配置sm.ms图床前需要注册图床的账户。图床地址 https://smms.app/ 。
 
-   >这里使用picgo-plugin-smms-user插件，插件下载地址https://github.com/xlzy520/picgo-plugin-smms-user。可以使用git或者直接点击下载压缩包。
+   >这里使用picgo-plugin-smms-user插件，插件下载地址 https://github.com/xlzy520/picgo-plugin-smms-user 。可以使用git或者直接点击下载压缩包。
    >
    >- 在线安装直接在插件设置界面搜索：**smms-user**安装，安装完成后重启应用
    >
@@ -52,15 +50,15 @@ abbrlink: 532806c
    >  npm install ./picgo-plugin-smms-user
    >  ~~~
 
-   ![image-20241020142806786](https://s2.loli.net/2024/10/20/qUmz5ZehK4OaEvS.png)
+   ![image-20241020142806786](https://bitiful.hudi.space/posts/image-20241020142806786.png)
 
 3. 安装使用导入本地插件的方式如上图。导入后就会在《插件设置》菜单显示。
 
 4. 点击插件的设置按钮，选择最后一项《配置uploader-smms-user》配置smms-user的auth值，auth通过[smms官网](https://smms.app/)的API-Token获取即可。
 
-   ![image-20241020145626017](https://s2.loli.net/2024/10/20/gvm97be8cflxLRW.png)
+   ![image-20241020145626017](https://bitiful.hudi.space/posts/sm_msauth.png)
 
-5. 配置完成后在《上传区》图片上传勾选SM.MS-登录用户就完成了picgo和sm.ms的配置。和上述picgo简介应用图片位置一致。将图片拖入相应位置就可以直接将图片上传到sm.ms图床上了。登录https://smms.app/即可查看。
+5. 配置完成后在《上传区》图片上传勾选SM.MS-登录用户就完成了picgo和sm.ms的配置。和上述picgo简介应用图片位置一致。将图片拖入相应位置就可以直接将图片上传到sm.ms图床上了。登录 https://smms.app/ 即可查看。
 
 6. 对于picgo的其他配置可以在设置模块查看，建议开启上传前重命名功能。此项功能方便以后管理sm.ms图床的图片。
 
@@ -81,7 +79,7 @@ Typora本软件不再做介绍，直接给出配置步骤。
 5. 上传服务选择***Picgo(app)***
 6. picgo的路径选择picgo的安装路径中的picgo.exe可执行程序即可如下图。
 
-![image-20241020151951062](https://s2.loli.net/2024/10/20/A13RwKLq8Jfxmk9.png)
+![image-20241020151951062](https://bitiful.hudi.space/posts/smms_typora_config.png)
 
 完成以上的配置，你的typora就实现了插入图片自动上传到smms的图床的功能啦。🎉🎉🎉
 
@@ -99,7 +97,7 @@ Typora本软件不再做介绍，直接给出配置步骤。
 
 2. 进入又拍云控制台，在云服务列表，创建服务。服务名称就是bucket。在后续picgo配置中会使用到，应用场景-填写网页图片，存储类型-选择标准类型，这里授权账号可以先不授权。也可以直接授权已有的操作员，或者新建授权操作员。然后点击下方的创建。服务创建完成后，点击进入配置。
 
-   ![image-20241020162956667](https://s2.loli.net/2024/10/20/kdBGrFfJsajo3qX.png)
+   ![image-20241020162956667](https://bitiful.hudi.space/posts/upyun-bucket-create.png)
 
 3. 在功能配置的域名管理模块，域名加速模块绑定域名。这里注意，在绑定域名时，域名需要***备案***，不然***审核不通过***，然后去域名提供商网站增加域名解析记录。这里以***阿里云为例***。
 
@@ -111,11 +109,11 @@ Typora本软件不再做介绍，直接给出配置步骤。
 
      记录值填写在又拍云云存储服务的CNAME就可以了。该值的查找方式，又拍云控制台->云存储服务->服务管理 云存储（在该页面中点击服务名称）->域名管理页面的CNAME。
 
-   ![image-20241020165402733](https://s2.loli.net/2024/10/20/gQHZYl8sThUXB1v.png)
+   ![image-20241020165402733](https://bitiful.hudi.space/posts/alyun_dns_e.png)
 
 4. 存储管理模块的***操作员授权***。点击授权按钮，有操作员就直接勾选☑️，没有操作员的点击新建授权操作员。输入操作员名称，密码项只能点击系统生成。生成完成后复制该密码，保存起来后续在配置picgo中使用。然后权限勾选☑️可读取，可写入，可删除。根据实际用途勾选权限。点击创建即可，如下图。
 
-   ![image-20241020164210706](https://s2.loli.net/2024/10/20/UVnLzu2QtksfFid.png)
+   ![image-20241020164210706](https://bitiful.hudi.space/posts/auth_upyun_bucket.png)
 
 5. 完成上述步骤，你的又拍云云存储服务就创建好了。🎉🎉🎉
 

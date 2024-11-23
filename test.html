@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #divContainer{
+            position: relative;
+        }
+        #divContainer img{
+            position:absolute;
+            transition: all .5s;
+        }
+    </style>
+</head>
+<body>
+  <div id="divContainer"></div>
+<script>
+
+
+    function main() {
+        createImg()
+        resize()
+    }
+    function createImg() {
+        let divContainer=document.getElementById("divContainer")
+        for (let i = 0; i < 20; i++) {
+            let img=document.createElement("img")
+            let seed=Math.floor(Math.random()*(400-200)+200)
+            img.src = `/img/${i}.jpg`
+            divContainer.appendChild(img)
+            img.onload = setPosition
+        }
+    }
+    function setPosition() {
+        let divContainer=document.getElementById("divContainer")
+        const imgwidth = 350;
+        let clientWidth = divContainer.clientWidth;
+        let columns = Math.floor(clientWidth / imgwidth)
+        let gapNumber=columns+1
+        let gap=(clientWidth-columns*imgwidth) / gapNumber
+        let arr=new Array(columns)
+        arr.fill(0)
+        for (let i = 0; i < divContainer.childNodes.length; i++) {
+            let curr = divContainer.childNodes[i]
+            let mintop =Math.min(...arr)
+            curr.style.top = mintop+"px"
+            let index=arr.indexOf(mintop)
+            arr[index]= arr[index]+curr.height+gap
+            let left = index*imgwidth + (index+1)*gap
+            curr.style.left = left + "px"
+        }
+        let maxHeight=Math.max(...arr)
+        divContainer.style.height = maxHeight + "px"
+    }
+    function resize() {
+        let  timeid = null
+        window.onresize = function () {
+            if (timeid){
+                clearTimeout(timeid)
+            }
+            timeid = setTimeout(setPosition,500)
+        }
+    }
+    main()
+</script>
+</body>
+</html>
