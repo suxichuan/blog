@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>1111</p>
+ <script>
+     window.onload = function (){
+         let selectedText = '';
+         if (document.getSelection) {
+             selectedText = document.getSelection().toString();
+         } else if (document.selection && document.selection.type !== 'Control') {
+             selectedText = document.selection.createRange().text;
+         }
+         console.log(selectedText);
+     }
+ </script>
+</body>
+</html>

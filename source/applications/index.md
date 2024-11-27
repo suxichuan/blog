@@ -7,4 +7,5 @@ comments: false
 top_img: false
 aside: false
 page: false
+layout: null
 ---

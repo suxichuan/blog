@@ -1,0 +1,403 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>标签: Oracle | 短巷与雨</title><meta name="author" content="Hudi"><meta name="copyright" content="Hudi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="短巷与雨">
+<meta property="og:url" content="https://www.hudi.space/tags/Oracle/index.html">
+<meta property="og:site_name" content="短巷与雨">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.hudi.space/img/avator.jpg">
+<meta property="article:author" content="Hudi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.hudi.space/img/avator.jpg"><link rel="shortcut icon" href="/img/favi.png"><link rel="canonical" href="https://www.hudi.space/tags/Oracle/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.hudi.space/css/all.min.css"><link rel="stylesheet" href="https://cdn.hudi.space/css/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"IL8M13XBKP","apiKey":"f44d23da6abad913d44b25c0695f152d","indexName":"hexo","hitsPerPage":6,"languages":{"input_placeholder":"搜索文章","hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，耗时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":150,"languages":{"author":"作者: Hudi","link":"链接: ","source":"来源: 短巷与雨","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://npm.elemecdn.com/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '标签: Oracle',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" type="text/css" href="/custom/css/poem.css"><link rel="stylesheet" type="text/css" href="/custom/fonts/fonts.css"><link rel="stylesheet" type="text/css" href="/custom/css/index.css"><link rel="stylesheet" href="/custom/css/rightmenu.css"><link rel="stylesheet" type="text/css" href="/custom/css/heoMainColor.css"><!--添加的//- global config
+!=partial('includes/head/config', {}, {cache: true})
+
+include ./head/config_site.pug
+include ./head/noscript.pug
+
+!=fragment_cache('injectHeadJs', function(){return inject_head_js()})
+
+!=fragment_cache('injectHead', function(){return injectHtml(theme.inject.head)})--><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.hudi.space/css/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.hudi.space/css/swiperstyle.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/rss.xml" title="短巷与雨" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><!--.configure-border-1--><!--  .configure-core--><!--.configure-border-2--><!--  .configure-core--><!--.loading-word= _p('loading')--><div class="svg"></div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+     const svg= document.querySelector(".svg")
+      svg.innerHTML=`<svg t="1732352974310" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1160" width="256" height="256">
+          <path class="path" d="M333.7 400.4s11.2-5.4 18.8-27.8 25.6-75.3 71.7-107.6 83.4-38.1 147.9-42.1 119.7-10.8 137.6-48.9c0 0-0.4 27.8-16.1 49.8 0 0 8.5-0.9 24.2-42.6 0 0 15.9 4.1 37.1-5.3 21.2-9.4 26.6-17.1 39-25.9 12.4-8.7 29.3-15.5 32.6-21.2 0 0-10.1 34.3-9.4 39.3 0.7 5 7.1-2.7 9.4-14.5 2.4-11.8 5-31.6 16.8-33.6s24.2-7.1 46.1-21.5 39.7-30.3 35-61.9c0 0 20.5 28.6 7.7 70.9-12.8 42.4-24.2 76-61.2 106.2-37 30.3-51.1 41.7-73.3 58.5-22.2 16.8-70.6 4.7-98.9 10.1 0 0 34.7-0.9 45.5 17 0 0-37.7 11.7-57.4 27.8s-48.4 36.8-65.5 46.6-35 31.4-48.4 69-27.8 94.1-44.8 104.9c-17 10.8-50.2 35-82.5 44.8s-64.6 8.1-94.1 17.9-27.8 15.2-27.8 15.2 36.8-5.4 53.8-3.6 29.6 1.8 40.3-1.8c0 0-38.6 20.6-61.9 30.5s-56.5 15.2-68.1 17.9c0 0 35 10.8 63.7 0 0 0-22 17.5-48.4 17.9s-36.3-1.8-39.5 2.7c0 0 8.5-1.8 22 5.8s13 10.3 23.3 11.2c0 0-12.1 2.7-28.2-4.5s-21.1-1.8-21.1-1.8 17.9 24.7 54.7 33.6c0 0-20.2 10.8-58.7-24.7 0 0 1.8 9 0 13.9 0 0 0.4-5.8-11.2-13 0 0-2.7 47.1-3.1 57.8s0.4 16.6 3.6 22.4c0 0-10.3-6.7-12.1-32.7s3.1-39.5 0-48.4-7.2-8.5-9.9-3.1-26.4 58.3-26.9 69.9 3.1 22.9-9 38.1-39 44.8-45.3 56.5-26.4 56.9-30 67.7c-1.8 5.4-12.1 8.1-24.2 13 0 0 12.1-7.6 15.7-14.3s31.6-149.1 79.1-236.9c0 0-15.7 11.7-34.3 10.3s-19.6-4.1-33.4-6.1c-13.8-2 27.3 3.6 40.6 0.9s19.9-11 19.9-11-34.5 3.6-45.7-2.7c-11.2-6.3-21.1-21.1-19.7-39.5s9.4-35.4 9.4-35.4-3.8 46 16.8 53.1 35.6 2.9 39-0.2c0 0-12.3 3.1-27.1-15-14.8-18.2-19.5-33.6-19.5-56.7s13.9-26.9 19.3-26.9 15.2 9.9 15.2 21.7c0 11.9-7.2 15-7.2 15s4.3-17.9-5.6-17.7c-9.9 0.2-11.7 13.9-11 22.4s11.7 28.7 32.5 28c9 0 14.6-1.6 14.6-1.6s-3.6-25.3-10.1-36.5c0 0 9.2 14.6 14.8 35.9 1.1 2.9 8.3 10.3 11-4.7 2.7-15 9.6-58.5-15.2-80-5.4-4-13.4-5.2-15.9-3.6s-5.2 3.6-6.1 5.8c0 0 3.1-12.8 14.8-13 11.7-0.2 22.6 13 25.8 25.3 0 0-2.5-49.5 2.5-64.3 0 0-2.5 43 6.9 54.5 3.1 3.1 3.6-13.2 3.6-13.2s-4.7-49.5 6.5-90.8 43.9-94.6 43.9-94.6-18.8 61.9-15.2 79.8c0 0 31.4-72.6 61.4-108.9 11.2-13.9 54.2-41.7 68.1-52.5s25.1-25.6 25.1-25.6-21.1 35.4-44.8 62.8-29.5 85.8-29.5 85.8z m473.4-204C301.4 349.7 185.4 684.9 185.4 684.9c180.3-346.1 621.7-488.5 621.7-488.5zM160.7 779.8c-8.1 21.2-5 27.9 1.2 27.1 6.2-0.8 18.5-18.3 20.8-21.7 2.4-3.4 1.7-7.4 2.7-10.4 62.9-192.3 288-396.7 288-396.7-260.7 204.7-304.6 380.5-312.7 401.7z" fill="#ffffff" p-id="1161"></path>
+          <path class="path" d="M109.9 951.3s534.2-42.1 534.2-125.1c0-45.1-132.2-86.8-132.2-136.6s270.2-121.3 320-125.1c0 0-289.4 76.6-289.4 126.4 0 39.6 134.1 81.1 134.1 135.4 0-0.1 31.7 105.9-566.7 125z" fill="#ffffff" p-id="1162"></path></svg>`
+      let plist = document.querySelectorAll(".path")
+      plist.forEach(p => {
+        const length = p.getTotalLength()
+        p.style.setProperty("--length", length)
+      })
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load', preloader.endLoading)
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avator.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">22</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas  fa-newspaper"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-link"></i><span> 链接</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/addlink/"><i class="fa-fw fas fa-solid fa-at"></i><span> 友链申请</span></a></li><li><a class="site-page child" href="/friend/"><i class="fa-fw fas fa-solid fa-atom"></i><span> 朋友圈</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-solid fa-layer-group"></i><span> 我的</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/movie/"><i class="fa-fw fas fa-solid fa-film"></i><span> 电影</span></a></li><li><a class="site-page child" href="/applications/"><i class="fa-fw fas fa-solid fa-industry"></i><span> 应用</span></a></li><li><a class="site-page child" href="/memos/"><i class="fa-fw fas fa-solid fa-comment-dots"></i><span> 说说</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/timeline/"><i class="fa-fw fas fa-solid fa-grip-lines"></i><span> 时间线</span></a></li><li><a class="site-page child" href="/messages/"><i class="fa-fw fas fa-solid fa-clipboard-list"></i><span> 留言</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">短巷与雨</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas  fa-newspaper"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-link"></i><span> 链接</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/addlink/"><i class="fa-fw fas fa-solid fa-at"></i><span> 友链申请</span></a></li><li><a class="site-page child" href="/friend/"><i class="fa-fw fas fa-solid fa-atom"></i><span> 朋友圈</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-solid fa-layer-group"></i><span> 我的</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/movie/"><i class="fa-fw fas fa-solid fa-film"></i><span> 电影</span></a></li><li><a class="site-page child" href="/applications/"><i class="fa-fw fas fa-solid fa-industry"></i><span> 应用</span></a></li><li><a class="site-page child" href="/memos/"><i class="fa-fw fas fa-solid fa-comment-dots"></i><span> 说说</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/timeline/"><i class="fa-fw fas fa-solid fa-grip-lines"></i><span> 时间线</span></a></li><li><a class="site-page child" href="/messages/"><i class="fa-fw fas fa-solid fa-clipboard-list"></i><span> 留言</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></li></ul></div></div></div><div id="other"><!--.menus_item--><!--  a(href="/random.html")--><!--    i.iconfont.icon-suiji--><div class="menus_item"><a class="site-page" href="/random.html"><i class="fas fa-solid fa-dice-d6"></i></a></div><div class="menus_item"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i></span></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">Oracle</h1></div></header><script src="/custom/js/newest.js" charset="utf-8"></script><main class="layout" id="content-inner"><div id="tag"><div class="article-sort-title">标签 - Oracle</div><div class="article-sort"><div class="article-sort-item year">2024</div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/7b34242e/" title="Oracle学习基础笔记"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/oraclebase/Oracle_banner.jpeg" alt="Oracle学习基础笔记" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2024-10-23T08:12:57.841Z" title="发表于 2024-10-23 16:12:57">2024-10-23</time></div><a class="article-sort-item-title" href="/posts/7b34242e/" title="Oracle学习基础笔记">Oracle学习基础笔记</a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avator.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Hudi</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">22</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><div class="card-widget" id="card-poem"><div id="poem_sentence"></div><div id="poem_info"><div id="poem_dynasty"></div><div id="poem_author"></div></div></div><script src="https://cdn.hudi.space/js/jinrishici.js" charset="utf-8"></script><script type="text/javascript">jinrishici.load(function(result) {
+    var sentence = document.querySelector("#poem_sentence")
+    var author = document.querySelector("#poem_author")
+    var dynasty = document.querySelector("#poem_dynasty")
+
+    var sentenceText = result.data.content
+    sentenceText = sentenceText.substr(0, sentenceText.length - 1);
+    sentence.innerHTML = sentenceText
+    dynasty.innerHTML = result.data.origin.dynasty
+    author.innerHTML = result.data.origin.author + '《' + result.data.origin.title + '》'
+});</script><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">希望会拥有选择的权利，选择有意义、有时间的工作，而不是被迫谋生。当然能暴富最好了，哈哈哈哈。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/ca287c24/" title="Svg描边Loading动画"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/2024/11/d063b0b7b68302ca0dc1cb5177187c69.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Svg描边Loading动画"/></a><div class="content"><a class="title" href="/posts/ca287c24/" title="Svg描边Loading动画">Svg描边Loading动画</a><time datetime="2024-11-27T02:49:49.912Z" title="发表于 2024-11-27 10:49:49">2024-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/b632734/" title="云部署Hexo和Certbot申请"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/cloud_digtal.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="云部署Hexo和Certbot申请"/></a><div class="content"><a class="title" href="/posts/b632734/" title="云部署Hexo和Certbot申请">云部署Hexo和Certbot申请</a><time datetime="2024-11-07T11:20:40.005Z" title="发表于 2024-11-07 19:20:40">2024-11-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1e46a8be/" title="Flume基础学习"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/flume.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Flume基础学习"/></a><div class="content"><a class="title" href="/posts/1e46a8be/" title="Flume基础学习">Flume基础学习</a><time datetime="2024-10-28T04:28:07.193Z" title="发表于 2024-10-28 12:28:07">2024-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7b34242e/" title="Oracle学习基础笔记"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/oraclebase/Oracle_banner.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Oracle学习基础笔记"/></a><div class="content"><a class="title" href="/posts/7b34242e/" title="Oracle学习基础笔记">Oracle学习基础笔记</a><time datetime="2024-10-23T08:12:57.841Z" title="发表于 2024-10-23 16:12:57">2024-10-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/532806c/" title="Picgo+Typora+SMMS图床配置"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/picgo_typora_cover_post.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Picgo+Typora+SMMS图床配置"/></a><div class="content"><a class="title" href="/posts/532806c/" title="Picgo+Typora+SMMS图床配置">Picgo+Typora+SMMS图床配置</a><time datetime="2024-10-23T05:36:20.335Z" title="发表于 2024-10-23 13:36:20">2024-10-23</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"><span class="card-category-list-name">Hexo博客美化</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1/"><span class="card-category-list-name">云服务</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/"><span class="card-category-list-name">工具</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"><span class="card-category-list-name">数据库</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 1.45em; color: rgb(110, 160, 50);">工具</a><a href="/tags/%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE/" style="font-size: 1.15em; color: rgb(75, 117, 127);">图床配置</a><a href="/tags/Picgo/" style="font-size: 1.15em; color: rgb(148, 50, 105);">Picgo</a><a href="/tags/%E4%BA%91%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1/" style="font-size: 1.15em; color: rgb(50, 50, 129);">云存储服务</a><a href="/tags/hexo/" style="font-size: 1.45em; color: rgb(92, 168, 168);">hexo</a><a href="/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1/" style="font-size: 1.15em; color: rgb(122, 50, 68);">云服务</a><a href="/tags/svg/" style="font-size: 1.15em; color: rgb(193, 50, 177);">svg</a><a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 1.15em; color: rgb(149, 149, 170);">动画</a><a href="/tags/Oracle/" style="font-size: 1.15em; color: rgb(50, 56, 92);">Oracle</a><a href="/tags/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.15em; color: rgb(179, 144, 50);">关系型数据库</a><a href="/tags/%E8%A1%A8/" style="font-size: 1.15em; color: rgb(186, 101, 190);">表</a><a href="/tags/%E8%A7%86%E5%9B%BE/" style="font-size: 1.15em; color: rgb(153, 94, 60);">视图</a><a href="/tags/%E8%A1%A8%E7%A9%BA%E9%97%B4/" style="font-size: 1.15em; color: rgb(151, 88, 126);">表空间</a><a href="/tags/%E5%BA%8F%E5%88%97/" style="font-size: 1.15em; color: rgb(160, 98, 200);">序列</a><a href="/tags/%E5%87%BD%E6%95%B0/" style="font-size: 1.15em; color: rgb(50, 136, 64);">函数</a><a href="/tags/%E7%B4%A2%E5%BC%95/" style="font-size: 1.15em; color: rgb(166, 195, 50);">索引</a><a href="/tags/%E8%A7%A6%E5%8F%91%E5%99%A8/" style="font-size: 1.15em; color: rgb(61, 91, 51);">触发器</a><a href="/tags/%E5%AD%98%E5%82%A8%E5%87%BD%E6%95%B0/" style="font-size: 1.15em; color: rgb(86, 50, 150);">存储函数</a><a href="/tags/%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B/" style="font-size: 1.15em; color: rgb(148, 65, 85);">存储过程</a><a href="/tags/Flume/" style="font-size: 1.15em; color: rgb(126, 100, 98);">Flume</a><a href="/tags/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86/" style="font-size: 1.15em; color: rgb(172, 76, 140);">数据采集</a><a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" style="font-size: 1.15em; color: rgb(154, 50, 50);">分布式</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/11/">
+          <span class="card-archive-list-date">十一月 2024</span>
+          <span class="card-archive-list-count">2</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/10/">
+          <span class="card-archive-list-date">十月 2024</span>
+          <span class="card-archive-list-count">3</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2024-10-21T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">20.5k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-11-27T08:09:38.215Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);"><div id="footer-wrap"><div class="copyright">&copy;2024 &nbsp;<i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;"class="fas fa-heart"></i> By Hudi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi,朋友别来无恙！</div><div class="footer_custom_icp">蜀ICP备2024107539号</div><div class="footer_custom_ga">川公网安备51169602000107号</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><!--button#hide-aside-btn(type="button" title=_p('rightside.aside'))--></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fas fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fas fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fas fa-solid fa-retweet"></i></div><div class="rightMenu-item" id="menu-home"><i class="fas fa-home"></i></div></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" onclick="copy()" onmouseenter="presaveData()"><i class="fas fa-solid fa-copy"></i><span>复制</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fas fa-archive"></i><span>文章时间线</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fas fa-folder-open"></i><span>文章分大类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fas fa-tags"></i><span>文章小标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><a class="rightMenu-item menu-link" id="menu-radompage" href="/messages/"><i class="fas fa-solid fa-clipboard-list"></i><span>随心留言板</span></a><!--a.rightMenu-item#menu-darkmode--><!--    i.fas.fa-adjust--><!--    span='切换亮暗模式'--><!--.rightMenu-item#menu-print--><!--    i.fa-solid.fa-print.fa-fw--><!--    span='打印整个页面'--></div></div><div id="rightmenu-mask" onclick="RemoveRightMenu()"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.hudi.space/js/fancybox.umd.min.js"></script><script src="https://cdn.hudi.space/js/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (false) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://npm.elemecdn.com/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const $chartjs = document.querySelectorAll('#article-container .chartjs-container')
+  if ($chartjs.length === 0) return
+
+  const applyThemeDefaultsConfig = theme => {
+    if (theme === 'dark-mode') {
+      Chart.defaults.color = "rgba(255, 255, 255, 0.8)"
+      Chart.defaults.borderColor = "rgba(255, 255, 255, 0.2)"
+      Chart.defaults.scale.ticks.backdropColor = "transparent"
+    } else {
+      Chart.defaults.color = "rgba(0, 0, 0, 0.8)"
+      Chart.defaults.borderColor = "rgba(0, 0, 0, 0.1)"
+      Chart.defaults.scale.ticks.backdropColor = "transparent"
+    }
+  }
+
+  // Recursively traverse the config object and automatically apply theme-specific color schemes
+  const applyThemeConfig = (obj, theme) => {
+    if (typeof obj !== 'object' || obj === null) return
+    
+    Object.keys(obj).forEach(key => {
+      const value = obj[key]
+      // If the property is an object and has theme-specific options, apply them
+      if (typeof value === 'object' && value !== null) {
+        if (value[theme]) {
+          obj[key] = value[theme] // Apply the value for the current theme
+        } else {
+          // Recursively process child objects
+          applyThemeConfig(value, theme)
+        }
+      }
+    })
+  }
+
+  const runChartJS = () => {
+    window.loadChartJS = true
+
+    Array.from($chartjs).forEach((item, index) => {
+      const chartSrc = item.firstElementChild
+      const chartID = item.getAttribute('data-chartjs-id') || ('chartjs-' + index) // Use custom ID or default ID
+      const width = item.getAttribute('data-width')
+      const existingCanvas = document.getElementById(chartID)
+
+      // If a canvas already exists, remove it to avoid rendering duplicates
+      if (existingCanvas) {
+          existingCanvas.parentNode.remove()
+      }
+
+      const chartDefinition = chartSrc.textContent
+      const canvas = document.createElement('canvas')
+      canvas.id = chartID
+
+      const div = document.createElement('div')
+      div.className = 'chartjs-wrap'
+
+      if (width) {
+        div.style.width = width
+      }
+
+      div.appendChild(canvas)
+      chartSrc.insertAdjacentElement('afterend', div)
+
+      const ctx = document.getElementById(chartID).getContext('2d')
+
+      const config = JSON.parse(chartDefinition)
+
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark-mode' : 'light-mode'
+
+      // Set default styles (initial setup)
+      applyThemeDefaultsConfig(theme)
+
+      // Automatically traverse the config and apply dual-mode color schemes
+      applyThemeConfig(config, theme)
+
+      new Chart(ctx, config)
+    })
+  }
+
+  const loadChartJS = () => {
+    window.loadChartJS ? runChartJS() : btf.getScript('https://npm.elemecdn.com/chart.js/dist/chart.umd.min.js').then(runChartJS)
+  }
+
+  // Listen for theme change events
+  btf.addGlobalFn('themeChange', runChartJS, 'chartjs')
+  btf.addGlobalFn('encrypt', runChartJS, 'chartjs')
+
+  window.pjax ? loadChartJS() : document.addEventListener('DOMContentLoaded', loadChartJS)
+})()</script></div><script src="/custom/js/title.js"></script><script src="/custom/js/jquery.js"></script><script async data-pjax src="/custom/js/rightmenu.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.hudi.space/js/fireworks.min.js"></script><script async data-pjax src="https://cdn.hudi.space/js/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.hudi.space/js/algoliasearch-lite.umd.min.js"></script><script src="https://npm.elemecdn.com/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementsByClassName('recent-posts')[0];
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/ca287c24/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/2024/11/d063b0b7b68302ca0dc1cb5177187c69.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-11-27</span><a class="blog-slider__title" href="posts/ca287c24/" alt="">Svg描边Loading动画</a><div class="blog-slider__text">之前在浏览他人的博客时，看到loading动画是蒙娜丽莎的svg描边。觉得挺对自己胃口的，但是又不知道这样的效果怎么去实现，去b站刷了一些前端的学习视频，其中看到一个特别好看的动画特效。active状态下导航栏的每一个菜单项图标的动画描边，但是奈何不知道怎么把svg的图标放到butterfly的__config.yml当中，所以决定写一个svg的描边loading动画。</div><a class="blog-slider__button" href="posts/ca287c24/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/b632734/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/cloud_digtal.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-11-07</span><a class="blog-slider__title" href="posts/b632734/" alt="">云部署Hexo和Certbot申请</a><div class="blog-slider__text">本章内容只是对最近学习的总结，对互联网相关开发者社区相关文章的一个整合和错误排查。最开始搭建博客的时候，不知道从何处下手。想去实现自己一些喜欢的前端样式，但是奈何都不尽人意，折腾了好久。所以选择了hexo的butterfly主题去快速搭建一个博客。后期还会对博客的部分样式做一定的更改，改成自己喜欢的样式效果。</div><a class="blog-slider__button" href="posts/b632734/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/1e46a8be/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/flume.jpeg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-10-28</span><a class="blog-slider__title" href="posts/1e46a8be/" alt="">Flume基础学习</a><div class="blog-slider__text">Flume日志采集工具，可以配合第三方的前端埋点SDK去实现行为日志采集，到目前为止在工作中也没有使用到和涉及到。当时在使用这个工具时，学习的内容的深度相对来说也比较浅薄。后续会根据学习内容和规划做相应的调整，完善相关的学习笔记。本文主要介绍了Flume工具的基本配置使用、各个组件在其中发挥的作用、内部架构等。</div><a class="blog-slider__button" href="posts/1e46a8be/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/7b34242e/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/oraclebase/Oracle_banner.jpeg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-10-23</span><a class="blog-slider__title" href="posts/7b34242e/" alt="">Oracle学习基础笔记</a><div class="blog-slider__text">关系型数据库学习，其中包括数据库查询语言，控制语言，操作语言等，对表空间的理解，索引，视图等操作，有存储函数，存储过程</div><a class="blog-slider__button" href="posts/7b34242e/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/532806c/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bitiful.hudi.space/posts/picgo_typora_cover_post.jpeg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-10-23</span><a class="blog-slider__title" href="posts/532806c/" alt="">Picgo+Typora+SMMS图床配置</a><div class="blog-slider__text">本文介绍了使用免费图床 sm.ms 以及扩展到又拍云的配置方法。首先说明了选择 sm.ms 图床的原因，并详细介绍了 Picgo 安装配置及与 sm.ms 图床的连接步骤，使用插件方式。接着介绍了 Typora 的配置，使其能利用 Picgo 工具将图片自动上传到 sm.ms 图床。最后以又拍云为例进行扩展，包括注册账号、创建服务、绑定域名、操作员授权等步骤，以及在 Picgo 中的配置方法。</div><a class="blog-slider__button" href="posts/532806c/" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://cdn.hudi.space/js/swiper.min.js"></script><script defer data-pjax src="https://cdn.hudi.space/js/swiper_init.js"></script><!-- hexo injector body_end end -->
+        <script src="https://cdn.hudi.space/js/base64.min.js"></script>
+        <script src="https://cdn.hudi.space/js/jquery.js"></script>
+        <script>
+        const hasAttr = (e,a) => a.some(_=> e.attr(_)!==undefined);
+        $('a').each(function() {
+          const $this = $(this);
+          if(hasAttr($this,["data-fancybox","ignore-external-link"])) return;
+          const href = $this.attr('href');
+          if (href && href.match('^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)')) {
+            const strs = href.split('/');
+            if (strs.length >= 3) {
+                const host = strs[2];
+                if (host !== 'www.hudi.space' || window.location.host) {
+                    $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
+                    if (true) {
+                        $this.attr('target', '_blank');
+                    }
+                }
+            }
+          }
+        });
+        </script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>

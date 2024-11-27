@@ -7,13 +7,13 @@ description: '本文介绍了使用免费图床 sm.ms 以及扩展到又拍云�
   图床。最后以又拍云为例进行扩展，包括注册账号、创建服务、绑定域名、操作员授权等步骤，以及在 Picgo 中的配置方法。'
 categories:
   - 工具
-  - 图床
 tags:
   - 工具
   - 图床配置
   - Picgo
   - 云存储服务
 abbrlink: 532806c
+swiper_index: 1
 ---
 
 # Picgo+Typora+SMMS图床配置

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function removeHTMLTags(str) {
+        return str.replace(/<[^>]*>/g, ' ');
+    }
+
+    // 示例
+    var str = '<p>因为你写错了哈哈，那个地址不是你头像的地址，而是全球通用头像服务的地址，你可以给删掉，因为新版默认就是weavatar.com，在国内速度很快<br><img alt="" src="https://fastly.jsdelivr.net/gh/god-willow/pic@main/pic/202411221258248.webp"></p>'
+    var result = removeHTMLTags(str);
+
+    console.log(result);  // 输出: This is bold text with a link.
+</script>
+</body>
+</html>

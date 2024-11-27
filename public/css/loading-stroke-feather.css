@@ -1,0 +1,28 @@
+.path{
+    stroke: lightslategrey;
+    --length: 0;
+    stroke-width:10;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+    stroke-linecap: round;
+    animation: strokes 2s infinite;
+}
+@keyframes strokes {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#loading-box{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*#loading-box #svg{*/
+/*    display: none;*/
+/*}*/

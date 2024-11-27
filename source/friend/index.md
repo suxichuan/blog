@@ -2,7 +2,7 @@
 title: 看看小伙伴都在干啥
 date: 2024-10-23 12:19:58
 type: "friend"
-comments: true
+comments: false
 #top_img: 'linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)'
 top_img: false
 aside: false

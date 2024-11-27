@@ -5,14 +5,14 @@ cover: 'https://bitiful.hudi.space/posts/flume.jpeg'
 description: >-
   Flume日志采集工具，可以配合第三方的前端埋点SDK去实现行为日志采集，到目前为止在工作中也没有使用到和涉及到。当时在使用这个工具时，学习的内容的深度相对来说也比较浅薄。后续会根据学习内容和规划做相应的调整，完善相关的学习笔记。本文主要介绍了Flume工具的基本配置使用、各个组件在其中发挥的作用、内部架构等。
 categories:
-  - 大数据
-  - 数据采集
+  - 工具
 tags:
   - 工具
   - Flume
   - 数据采集
   - 分布式
 abbrlink: 1e46a8be
+swiper_index: 3
 ---
 
 # Flume基础学习（一）
